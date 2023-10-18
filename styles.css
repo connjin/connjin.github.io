@@ -32,12 +32,12 @@ nav a {
 a {
 	color: var(--link-color);
 	text-decoration: none;
-	border-bottom: 1px solid var(--link-color);
+	border-bottom: 2px solid var(--link-color);
 }
 
 a:hover, a:focus {
 	color: var(--accent-color);
-	border-bottom: 1px dashed var(--accent-color);
+	border-bottom: 2px dashed var(--accent-color);
 	transition: 0.3s; 
 }
 
