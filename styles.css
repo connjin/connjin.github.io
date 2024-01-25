@@ -41,15 +41,21 @@ a:hover, a:focus {
 	transition: 0.3s; 
 }
 
+h1 {
+	font-weight: normal;
+}
+
 h2 {
 	margin-bottom: 10px;
-	font-size: 20px;
+	font-size: 22px;
+	font-weight: normal;
 }
 
 h3 {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 18px;
+	font-weight: bold; 
 }
 
 .year {
@@ -68,17 +74,22 @@ h3 {
 }
 
 .cowboy img, .worm img {
-	max-width: 400px;
+	max-width: 350px;
 	display: flex;
 	align-content: center;
-	margin-right: 10px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .intro .lede {
-	font-size: 32px;
-	font-weight: bold;
+	font-size: 30px;
+	font-weight: normal;
 	margin-top: 50px;
 	margin-bottom: 50px;
+
+	@media (max-width: 530px) {
+		font-size: 26px; 
+	}
 }
 
 .intro {
@@ -86,9 +97,18 @@ h3 {
 }
 
 ul {
-	list-style-type: none;
+	list-style-type: disc;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 70px; 
+}
+
+ul.resume {
+/*	list-style-type: none;*/
+}
+
+ul.resume .item {
+	margin-bottom: 50px; 
 }
 
 .list .item {
@@ -124,18 +144,31 @@ ul {
 	opacity: 0.5;
 }
 
+.desc {
+	margin-top: -10px; 
+}
+
 .social {
 	margin-top: 50px;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
+	align-items: baseline;
 	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
+	color: var(--lighter-text);
+
+	@media (max-width: 499px) {
+		max-width: 300px; 
+	}
 }
 
 .social a {
 	margin: 5px;
+	color: var(--lighter-text);
+	border-bottom: 2px solid var(--lighter-text);
 }
 
 /*mobile styles*/
