@@ -177,6 +177,11 @@ ul.resume .item {
 	margin-bottom: 0px;
 	color: var(--lighter-text);
 	border-bottom: 2px solid var(--lighter-text);
+
+	&:hover {
+		color: var(--accent-color);
+		border-bottom: 2px dashed var(--accent-color);
+	}
 }
 
 /*mobile styles*/
