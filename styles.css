@@ -151,6 +151,10 @@ ul.resume .item {
 	margin-top: -10px; 
 }
 
+.responsibilities {
+	color: var(--lighter-text);
+}
+
 .social {
 	margin-top: 50px;
 	display: flex;
@@ -169,7 +173,8 @@ ul.resume .item {
 }
 
 .social a {
-	margin: 5px;
+	margin: 4px;
+	margin-bottom: 0px;
 	color: var(--lighter-text);
 	border-bottom: 2px solid var(--lighter-text);
 }
