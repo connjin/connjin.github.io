@@ -32,12 +32,12 @@ nav a {
 a {
 	color: var(--link-color);
 	text-decoration: none;
-	border-bottom: 2px solid var(--link-color);
+	border-bottom: 1px solid var(--link-color);
 }
 
 a:hover, a:focus {
 	color: var(--accent-color);
-	border-bottom: 2px dashed var(--accent-color);
+	border-bottom: 1px dashed var(--accent-color);
 	transition: 0.3s; 
 }
 
@@ -93,6 +93,13 @@ h3 {
 	@media (max-width: 530px) {
 		font-size: 26px; 
 	}
+}
+
+hr {
+	margin-top: 30px;
+	margin-bottom: 30px; 
+/*	max-width: 60%; */
+	border: 2px dashed var(--accent-color);
 }
 
 .intro {
@@ -176,11 +183,11 @@ ul.resume .item {
 	margin: 4px;
 	margin-bottom: 0px;
 	color: var(--lighter-text);
-	border-bottom: 2px solid var(--lighter-text);
+	border-bottom: 1px solid var(--lighter-text);
 
 	&:hover {
 		color: var(--accent-color);
-		border-bottom: 2px dashed var(--accent-color);
+		border-bottom: 1px dashed var(--accent-color);
 	}
 }
 
